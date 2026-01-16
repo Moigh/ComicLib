@@ -76,5 +76,8 @@ def populate_db():
     )
     
     page1.chapter = chapter0
+
+    db.session.add(page1)
+    db.session.commit()
     
     return jsonify({'message': 'Test data created!', 'count': ComicBook.query.count()}), 201
