@@ -15,7 +15,7 @@ class ComicBook(db.Model):
     name = db.Column(db.String(200), nullable=False)
     description = db.Column(db.Text)
     cover_image = db.Column(db.String(300))  # Ссылка
-    year = db.Column(db.Date)
+    year = db.Column(db.Inteder)
     
     chapters = db.relationship('Chapter', backref='comicbook', lazy=True)
     authors = db.relationship('Author', secondary=Author_Book, 
