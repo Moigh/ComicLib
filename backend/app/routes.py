@@ -15,9 +15,11 @@ def get_comic(comic_id):
     return jsonify({'error': 'comic not found'}), 404
 
 # Получить главы комикса
-def get_comic_chapters(comic_id):
-    chapters = Chapter.query.filter_by(comicbook_id=comic_id).all()
-    return jsonify([chapter.to_dict() for chapter in chapters])
+def get_comic_chapters(comic_id):    
+    comic = ComicBook.query.get(comic_id)
+    if comic:
+        return jsonify([chapter.to_dict() for chapter in comic.chapters])
+    return jsonify({'error': 'comic not found'}), 404
 
 # Заполнить БД тестовыми данными
 def populate_db():
