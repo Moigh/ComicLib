@@ -18,8 +18,17 @@ with app.app_context():
 # Регистрируем маршруты
 app.add_url_rule('/api/comics', 'get_comics', routes.get_comics, methods=['GET'])
 app.add_url_rule('/api/comics/<int:comic_id>', 'get_comic', routes.get_comic, methods=['GET'])
+
 app.add_url_rule('/api/comics/<int:comic_id>/chapters', 'get_comic_chapters', 
                  routes.get_comic_chapters, methods=['GET'])
+app.add_url_rule('/api/chapters/<int:chapter_id>', 'get_chapter', 
+                 routes.get_chapter, methods=['GET'])
+
+app.add_url_rule('/api/chapters/<int:chapter_id>/pages', 'get_chapter_pages', 
+                 routes.get_chapter_pages, methods=['GET'])
+app.add_url_rule('/api/pages/<int:page_id>', 'get_page', 
+                 routes.get_page, methods=['GET'])
+
 app.add_url_rule('/api/populate', 'populate_db', routes.populate_db, methods=['POST'])
 
 # Тестовые маршруты
