@@ -16,7 +16,7 @@ def get_comic(comic_id):
 
 # Получить главы комикса
 def get_comic_chapters(comic_id):
-    chapters = Chapter.query.filter_by(ComicBook_id=comic_id).all()
+    chapters = Chapter.query.filter_by(comicbook_id=comic_id).all()
     return jsonify([chapter.to_dict() for chapter in chapters])
 
 # Заполнить БД тестовыми данными
