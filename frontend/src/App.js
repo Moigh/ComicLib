@@ -1,5 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+function HomePage() {
+  return <h1>Главная страница</h1>;
+}
+
+function AboutPage() {
+  return <h1>О проекте</h1>;
+}
+
+function App() {
+  return (
+    <Router>
+      <nav>
+        <Link to="/">Главная</Link> | 
+        <Link to="/about">О проекте</Link>
+      </nav>
+      
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
+    </Router>
+  );
+}
 
 function App() {
   return (
