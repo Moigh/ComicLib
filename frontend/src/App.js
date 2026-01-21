@@ -1,14 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-function Home() {
-  return <h1>Домашняя</h1>;
-}
-
-function About() {
-  return <h1>О проекте</h1>;
-}
+import Home from './pages/HomePage';
+import About from './pages/AboutPage';
+import Comic from './pages/ComicPage';
+import Reader from './pages/ReaderPage';
 
 function App() {
   return (
