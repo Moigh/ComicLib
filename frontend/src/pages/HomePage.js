@@ -1,4 +1,3 @@
-import React from 'react';
 import ComicCard from '../components/ComicCard';
 
 function HomePage() {
