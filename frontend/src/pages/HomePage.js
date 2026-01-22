@@ -1,4 +1,5 @@
 import React from 'react';
+import ComicCard from '../components/ComicCard';
 
 function HomePage() {
   // Тестовые данные
@@ -19,73 +20,10 @@ function HomePage() {
 
   return (
     <div className="container mt-3">
-      {/* Заголовок */}
-      <h3 className="mb-3">Комиксы</h3>
-      
-      {/* 
-        Сетка Bootstrap:
-        - На всех экранах: 4-6 карточек в строке
-        - col-6: на мобильных 2 в ряд (50%)
-        - col-sm-4: на планшетах 3 в ряд (33%)
-        - col-md-3: на десктопах 4 в ряд (25%)
-        - col-lg-2: на больших экранах 6 в ряд (16.6%)
-      */}
-      <div className="row g-4"> {/* g-2 маленькие отступы между карточками */}
+      <h3 className="mb-3">Комиксы</h3>      
+      <div className="row g-4">
         {testComics.map(comic => (
-          <div 
-            key={comic.id} 
-            className="col-6 col-sm-4 col-md-3 col-lg-2"
-          >
-            {/* Карточка - убираем padding, делаем компактнее */}
-            <div className="card h-100 border-0">
-              {/* Контейнер для изображения - делаем меньше */}
-              <div 
-                style={{
-                  position: 'relative',
-                  paddingTop: '150%', // Соотношение 2:3
-                  overflow: 'hidden'
-                }}
-              >
-                <img 
-                  src={comic.cover_image}
-                  alt={comic.name}
-                  style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover'
-                  }}
-                />
-              </div>
-              
-              {/* Текстовая часть - минимальный размер */}
-              <div className="card-body p-1">
-                {/* Название - маленький шрифт, ограничение по высоте */}
-                <h6 
-                  className="card-title " 
-                  style={{
-                    fontSize: '0.85rem',
-                    height: '2rem',
-                    overflow: 'hidden'
-                  }}
-                >
-                  {comic.name}
-                </h6>
-                
-                {/* Год - очень мелкий текст */}
-                <div className="d-flex justify-content-between">
-                  <small className="text-muted" style={{ fontSize: '0.75rem' }}>
-                    {comic.year}
-                  </small>
-                  <small className="text-muted" style={{ fontSize: '0.75rem' }}>
-                    Глав: {comic.chapters_count}
-                  </small>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ComicCard key={comic.id} comic={comic} />          
         ))}
       </div>
     </div>
