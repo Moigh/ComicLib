@@ -73,7 +73,7 @@
   },
   {
     "name": "Человек-Паук: Нуар",
-    "cover_image": "https://cover.imglib.info/uploads/cover/spider-man-noir/cover/c3d8e7f5-9a2a-4d8c-b6f1-e8f9a7b5c234.jpg",
+    "cover_image": "https://cover.imglib.info/uploads/cover/the-spectacular-spider-man/cover/ee8d4398-88ca-42eb-a47e-c52987b9a25b.jpg",
     "year": 2009,
     "authors": ["Marvel"],
     "description": "Человек-паук в стиле нуар 1930-х годов. Тёмный детективный комикс.",
@@ -120,7 +120,7 @@
   },
   {
     "name": "Человек-бензопила",
-    "cover_image": "https://cover.imglib.info/uploads/cover/chainsaw-man/cover/85b15c64-8940-48d1-94a0-7c97a8701e3b.jpg",
+    "cover_image": "https://cover.imglib.info/uploads/cover/chaisawman-full-color/cover/50ae7f43-9006-4172-a36d-6a9e476cef86.jpg",
     "year": 2018,
     "authors": ["Тацуки Фудзимото"],
     "description": "Дэнджи мечтает жить нормальной жизнью, но вместо этого становится демоном-бензопилой, охотящимся на других демонов.",
@@ -230,7 +230,7 @@
   },
   {
     "name": "Атака Титанов",
-    "cover_image": "https://cover.imglib.info/uploads/cover/shingeki-no-kyojin/cover/361c5573-796e-48cc-8b6b-a15a420b06c9.jpg",
+    "cover_image": "https://cover.imglib.info/uploads/cover/shingeki-no-kyojin/cover/e642cd97-1f96-41fb-a9f0-636a2105f242.jpg",
     "year": 2009,
     "authors": ["Хадзимэ Исаяма"],
     "description": "Человечество живёт в городах, окружённых гигантскими стенами, защищающими от титанов. Эрен Йегер клянётся уничтожить всех титанов.",
@@ -263,5 +263,153 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Ван Пис: Возвращение",
+    "cover_image": "https://cover.imglib.info/uploads/cover/one-piece/cover/8f6ebbfc-5a26-4fd5-a9f0-354869b71e92.jpg",
+    "year": 2023,
+    "authors": ["Эйитиро Ода"],
+    "description": "Новые приключения Луффи и команды Соломенной Шляпы на острове Элбаф.",
+    "chapters": [
+      {
+        "number": 1,
+        "name": "Остров великанов",
+        "pages": [
+          {"number": 1, "image": "https://img3.mixlib.me//manga/one-piece/chapters/1100/01.jpg"},
+          {"number": 2, "image": "https://img3.mixlib.me//manga/one-piece/chapters/1100/02.jpg"},
+          {"number": 3, "image": "https://img3.mixlib.me//manga/one-piece/chapters/1100/03.jpg"}
+        ]
+      },
+      {
+        "number": 2,
+        "name": "Сокровище великанов",
+        "pages": [
+          {"number": 1, "image": "https://img3.mixlib.me//manga/one-piece/chapters/1101/01.jpg"},
+          {"number": 2, "image": "https://img3.mixlib.me//manga/one-piece/chapters/1101/02.jpg"}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Монолог фармацевта",
+    "cover_image": "https://cover.imglib.info/uploads/cover/kusuriya-no-hitorigoto/cover/1d173f72-251a-44af-a745-d00a21fe5762.jpg",
+    "year": 2016,
+    "authors": ["Каю Сираи", "Посика Дэмуру"],
+    "description": "История о детях, пытающихся сбежать из сиротского приюта, который на самом деле является фермой по выращиванию людей для демонов.",
+    "chapters": [
+      {
+        "number": 1,
+        "name": "Побег из приюта",
+        "pages": [
+          {"number": 1, "image": "https://img3.mixlib.me//manga/yakusoku-no-neverland/chapters/1/01.jpg"},
+          {"number": 2, "image": "https://img3.mixlib.me//manga/yakusoku-no-neverland/chapters/1/02.jpg"},
+          {"number": 3, "image": "https://img3.mixlib.me//manga/yakusoku-no-neverland/chapters/1/03.jpg"}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Бэтмен: Тёмный рыцарь",
+    "cover_image": "https://cover.imglib.info/uploads/cover/batman-volume-2/cover/rj6kqb2fRBNB_250x350.jpg",
+    "year": 1986,
+    "authors": ["Фрэнк Миллер"],
+    "description": "Постаревший Брюс Уэйн возвращается в роли Бэтмена, чтобы спасти Готэм от нового поколения преступников.",
+    "chapters": [
+      {
+        "number": 1,
+        "name": "Возвращение рыцаря",
+        "pages": [
+          {"number": 1, "image": "https://img3.mixlib.me//manga/batman/chapters/1/01.jpg"},
+          {"number": 2, "image": "https://img3.mixlib.me//manga/batman/chapters/1/02.jpg"}
+        ]
+      },
+      {
+        "number": 2,
+        "name": "Битва с Джокером",
+        "pages": [
+          {"number": 1, "image": "https://img3.mixlib.me//manga/batman/chapters/2/01.jpg"},
+          {"number": 2, "image": "https://img3.mixlib.me//manga/batman/chapters/2/02.jpg"}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Джокер: Убийственная шутка",
+    "cover_image": "https://cover.imglib.info/uploads/cover/batman-the-killing-joke/cover/JbL2W8vfDnDW_250x350.jpg",
+    "year": 1988,
+    "authors": ["Алан Мур", "Брайан Болланд"],
+    "description": "Джокер пытается свести с ума комиссара Гордона, чтобы доказать, что один плохой день может превратить любого в сумасшедшего.",
+    "chapters": [
+      {
+        "number": 1,
+        "name": "Плохой день",
+        "pages": [
+          {"number": 1, "image": "https://img3.mixlib.me//manga/joker/chapters/1/01.jpg"},
+          {"number": 2, "image": "https://img3.mixlib.me//manga/joker/chapters/1/02.jpg"},
+          {"number": 3, "image": "https://img3.mixlib.me//manga/joker/chapters/1/03.jpg"}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Паутина вселенной Венома",
+    "cover_image": "https://cover.imglib.info/uploads/cover/web-of-venomverse-fresh-brains/cover/332fb9dc-e5cf-4c9b-9dd5-eaff3cf5a541.jpg",
+    "year": 2025,
+    "authors": ["Erica Schultz", "Mat Groom", "David Dastmalchian"],
+    "description": "Существование Венома и симбиотов по всей Вселенной Венома висит на волоске, когда они сходятся в схватке с обитателями Паучьих Миров, чтобы защитить коллективный разум симбиотов! В разгар восьминогой битвы знакомьтесь с тремя новыми симбиотами, которые готовы сбросить Пауков с их же паутины! У кого из них есть всё, что нужно? Может, это коварный Веномышь? Неукротимая Кэти Пауэр? Или совершенно новый Эдди Брок? Прочти и узнай!",
+    "chapters": [
+      {
+        "number": 1,
+        "name": "Мультивселенная",
+        "pages": [
+          {"number": 1, "image": "https://img3.mixlib.me//manga/spider-verse/chapters/1/01.jpg"},
+          {"number": 2, "image": "https://img3.mixlib.me//manga/spider-verse/chapters/1/02.jpg"}
+        ]
+      },
+      {
+        "number": 2,
+        "name": "Общество Пауков",
+        "pages": [
+          {"number": 1, "image": "https://img3.mixlib.me//manga/spider-verse/chapters/2/01.jpg"},
+          {"number": 2, "image": "https://img3.mixlib.me//manga/spider-verse/chapters/2/02.jpg"},
+          {"number": 3, "image": "https://img3.mixlib.me//manga/spider-verse/chapters/2/03.jpg"}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Страна самоцветов",
+    "cover_image": "https://cover.imglib.info/uploads/cover/houseki-no-kuni/cover/5068bb4e-48cc-4ffd-8652-f4a6847f7923.jpg",
+    "year": 2012,
+    "authors": ["Харуко Итикава"],
+    "description": "В мире, где живут самоцветы, обладающие человеческим обликом, Фосфорный топаза хочет найти своё предназначение."
+  },
+  {
+    "name": "Хоримия",
+    "cover_image": "https://cover.imglib.info/uploads/cover/horimiya/cover/b850b1ab-95e9-460a-8f2c-c8f093ec1c45_orig.jpg",
+    "year": 2011,
+    "authors": ["Хироki Адати"],
+    "description": "Популярная ученица Хори и тихий Миямура скрывают друг от друга свои истинные личности вне школы."
+  },
+  {
+    "name": "Магическая битва",
+    "cover_image": "https://cover.imglib.info/uploads/cover/jujutsu-kaisen/cover/d16a0aa6-eb88-4c86-8009-272c2d2aba28_orig.jpg",
+    "year": 2018,
+    "authors": ["Гэгэ Акутами"],
+    "description": "Юдзи Итадори съедает палец проклятия и становится сосудом для могущественного демона Сукуны."
+  },
+  {
+    "name": "Очень приятно, Бог",
+    "cover_image": "https://cover.imglib.info/uploads/cover/kamisama-hajimemashita/cover/5938d062-f8da-4caf-a49c-6ebe8b1cb80a_orig.jpg",
+    "year": 2008,
+    "authors": ["Джулиетта Судзуки"],
+    "description": "Нанами становится богиней святилища и знакомится с лисом-хранителем Томоэ."
+  },
+  {
+    "name": "Моб Психо 100",
+    "cover_image": "https://cover.imglib.info/uploads/cover/mob-psycho-100/cover/6e48f8ad-4178-49ff-82c2-9b53c82e8dd3_orig.jpg",
+    "year": 2012,
+    "authors": ["ONE"],
+    "description": "Сигэо Кагэяма, обладающий мощными экстрасенсорными способностями, пытается жить обычной жизнью."
   }
 ]
