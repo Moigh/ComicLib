@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 
 function HomePage() {
   const [comics, setComics] = useState([]);
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setLoading(true);
