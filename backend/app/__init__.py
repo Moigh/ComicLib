@@ -29,8 +29,6 @@ app.add_url_rule('/api/chapters/<int:chapter_id>/pages', 'get_chapter_pages',
 app.add_url_rule('/api/pages/<int:page_id>', 'get_page', 
                  routes.get_page, methods=['GET'])
 
-app.add_url_rule('/api/populate', 'populate_db', routes.populate_db, methods=['POST'])
-
 # Тестовые маршруты
 @app.route('/')
 def hello():
