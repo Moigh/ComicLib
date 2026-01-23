@@ -1,0 +1,267 @@
+[
+  {
+    "name": "Совершенный Человек-Паук",
+    "cover_image": "https://cover.imglib.info/uploads/cover/ultimate-spider-man/cover/sWg6m9L71m4K_250x350.jpg",
+    "year": 2000,
+    "authors": ["Brian Michael Bendis"],
+    "description": "Каково это - быть супергероем, спасать людей и всю жизнь носить маску, скрывая тайну своей личности? Такова судьба человека-паука. Его девиз: с великой силой приходит великая ответственность... И он готов на все, чтобы не подставить под удар жизни своих родных и близких!",
+    "chapters": [
+      {"number": 1, "name": "Бессилие часть 1", 
+      "pages":[
+        {"number": 1, 
+        "image": "https://img3.mixlib.me//manga/ultimate-spider-man/chapters/1559934/000_YPUv.jpg"},
+        {"number": 2, 
+        "image": "https://img3.mixlib.me//manga/ultimate-spider-man/chapters/1559934/001_4b00.jpg"},
+        {"number": 3, 
+        "image": "https://img3.mixlib.me//manga/ultimate-spider-man/chapters/1559934/002_b38F.jpg"}
+      ] 
+      },
+      {"number": 2, "name": "Бессилие часть 2", 
+        "pages":[
+          {"number": 1, 
+          "image": "https://img3.mixlib.me//manga/ultimate-spider-man/chapters/1559947/000_czaL.jpg"},
+          {"number": 2, 
+          "image": "https://img3.mixlib.me//manga/ultimate-spider-man/chapters/1559947/002_Cs4S.jpg"},
+          {"number": 3, 
+          "image": "https://img3.mixlib.me//manga/ultimate-spider-man/chapters/1559947/003_O0fi.jpg"},
+          {"number": 4, 
+          "image": "https://img3.mixlib.me//manga/ultimate-spider-man/chapters/1559947/004_nivX.jpg"},
+          {"number": 5, 
+          "image": "https://img3.mixlib.me//manga/ultimate-spider-man/chapters/1559947/005_EvKj.jpg"}
+        ] 
+      },
+      {"number": 3, "name": "Боль", 
+        "pages":[
+          {"number": 1, 
+          "image": "https://img3.mixlib.me//manga/ultimate-spider-man/chapters/1559950/000_8pcH.jpg"},
+          {"number": 2, 
+          "image": "https://img3.mixlib.me//manga/ultimate-spider-man/chapters/1559950/002_bJGN.jpg"},
+          {"number": 3, 
+          "image": "https://img3.mixlib.me//manga/ultimate-spider-man/chapters/1559950/003_RZHs.jpg"}
+        ] 
+      }
+    ]
+  },
+  {
+    "name": "Неуязвимый",
+    "cover_image": "https://cover.imglib.info/uploads/cover/invincible-image-comics/cover/6NibqGOAf1pX_250x350.jpg",
+    "year": 2002,
+    "authors": ["Robert Kirkman"],
+    "description": "«Неуязвимый» - комикс, рассказывающий о подросшем сыне супергероя, идущего по следам своего отца. Его имя – Марк Грейсон, вчера еще мальчишка, а сегодня - начинающий борец с преступностью. Юноша учится в школе и подрабатывает. В свое свободное от учебы время выходит на борьбу с оргпреступностью, чтобы доказать, что он не хуже своего кумира. Парень унаследовал от отца способности и силу, волевые качества, что позволяет ему противостоять тем, кто несет людям зло. В нем проявляются все волевые качества, наряду с успехами в учебе, исполнительностью, трудолюбием. Это первые шаги настоящего мужчины, не боящегося, ни темных улиц, ни тех, кто сеет панику, а также людей обижающих слабых. Марк - сильный духом, и смелостью своих действий способствует очищению улиц от бандитов. Подросток направляет свои усилия во благо справедливости, он не растрачивает их попусту. Его отец принимает участие в развитии его таланта и предлагает свою помощь для улучшения способностей сына. Заботясь о его имидже и становлении Марка как личности, предлагает свои знания. Главный герой должен научиться побеждать тех, кто имеет плохие намерения. Хочет стать заменой того, кто его воспитал, и быть на него похожим во всем.",
+    "chapters": [
+      {"number": 0.1, "name": "Atom Eve and Rex Splode, Часть 1 из 3", 
+        "pages":[
+          {"number": 1, 
+          "image": "https://img3.mixlib.me//manga/invincible-image-comics/chapters/1383640/Invincible_Presents_-_Atom_Eve_&_Rex_Splode_01-000_l3BS.jpg"},
+          {"number": 2, 
+          "image": "https://img3.mixlib.me//manga/invincible-image-comics/chapters/1383640/Invincible_Presents_-_Atom_Eve_&_Rex_Splode_01-001_x5kP.jpg"},
+          {"number": 3, 
+          "image": "https://img3.mixlib.me//manga/invincible-image-comics/chapters/1383640/Invincible_Presents_-_Atom_Eve_&_Rex_Splode_01-002_zoeW.jpg"}
+        ] 
+      },
+      {"number": 0.2, "name": "Atom Eve and Rex Splode, Часть 1 из 3", 
+        "pages":[
+          {"number": 1, 
+          "image": "https://img3.mixlib.me//manga/invincible-image-comics/chapters/1383650/Invincible_Presents_-_Atom_Eve_&_Rex_Splode_02-000_97vg.jpg"},
+          {"number": 2, 
+          "image": "https://img3.mixlib.me//manga/invincible-image-comics/chapters/1383650/Invincible_Presents_-_Atom_Eve_&_Rex_Splode_02-001_T4Fp.jpg"},
+          {"number": 3, 
+          "image": "https://img3.mixlib.me//manga/invincible-image-comics/chapters/1383650/Invincible_Presents_-_Atom_Eve_&_Rex_Splode_02-002_8kzI.jpg"}
+        ] 
+      }
+    ]
+  },
+  {
+    "name": "Человек-Паук: Нуар",
+    "cover_image": "https://cover.imglib.info/uploads/cover/spider-man-noir/cover/c3d8e7f5-9a2a-4d8c-b6f1-e8f9a7b5c234.jpg",
+    "year": 2009,
+    "authors": ["Marvel"],
+    "description": "Человек-паук в стиле нуар 1930-х годов. Тёмный детективный комикс.",
+    "chapters": [
+      {"number": 1, "name": "Тени Нью-Йорка", 
+        "pages":[
+          {"number": 1, 
+          "image": "https://img3.mixlib.me//manga/ultimate-spider-man/chapters/1559950/000_8pcH.jpg"},
+          {"number": 2, 
+          "image": "https://img3.mixlib.me//manga/ultimate-spider-man/chapters/1559950/002_bJGN.jpg"},
+          {"number": 3, 
+          "image": "https://img3.mixlib.me//manga/ultimate-spider-man/chapters/1559950/003_RZHs.jpg"}
+        ] 
+      },
+      {"number": 2, "name": "Паучий укус", 
+        "pages":[
+          {"number": 1, 
+          "image": "https://img3.mixlib.me//manga/ultimate-spider-man/chapters/1559950/000_8pcH.jpg"},
+          {"number": 2, 
+          "image": "https://img3.mixlib.me//manga/ultimate-spider-man/chapters/1559950/002_bJGN.jpg"},
+          {"number": 3, 
+          "image": "https://img3.mixlib.me//manga/ultimate-spider-man/chapters/1559950/003_RZHs.jpg"}
+        ] 
+      }
+    ]
+  },
+  {
+    "name": "Хранители",
+    "cover_image": "https://cover.imglib.info/uploads/cover/watchmen/cover/eUJOcFOXtQ4S_250x350.jpg",
+    "year": 1986,
+    "authors": ["Alan Moore"],
+    "description": "Действие «Хранителей» разворачивается в 1980-х годах в Соединённых Штатах Америки в альтернативной реальности. Основным отличием от реального мира является существование костюмированных героев.",
+    "chapters": [
+    ]
+  },
+  {
+    "name": "Железный Человек",
+    "cover_image": "https://cover.imglib.info/uploads/cover/invincible-iron-man-vol5/cover/DlGJeyoc6nyF_250x350.jpg",
+    "year": 2005,
+    "authors": ["Gerry Duggan"],
+    "description": "Тони Старк внедряет нанотехнологии в своё тело, становясь Железным Человеком нового поколения.",
+    "chapters": [
+    ]
+  },
+  {
+    "name": "Человек-бензопила",
+    "cover_image": "https://cover.imglib.info/uploads/cover/chainsaw-man/cover/85b15c64-8940-48d1-94a0-7c97a8701e3b.jpg",
+    "year": 2018,
+    "authors": ["Тацуки Фудзимото"],
+    "description": "Дэнджи мечтает жить нормальной жизнью, но вместо этого становится демоном-бензопилой, охотящимся на других демонов.",
+    "chapters": [
+      {
+        "number": 1,
+        "name": "Собака и бензопила",
+        "pages": [
+          {"number": 1, "image": "https://img3.mixlib.me//manga/chainsaw-man/chapters/177/01_KIka.jpg"},
+          {"number": 2, "image": "https://img3.mixlib.me//manga/chainsaw-man/chapters/177/02_Q3h9.jpg"},
+          {"number": 3, "image": "https://img3.mixlib.me//manga/chainsaw-man/chapters/177/03_y15n.jpg"},
+          {"number": 4, "image": "https://img3.mixlib.me//manga/chainsaw-man/chapters/177/04_qyNC.jpg"},
+          {"number": 5, "image": "https://img3.mixlib.me//manga/chainsaw-man/chapters/177/05_5VrF.jpg"}
+        ]
+      },
+      {
+        "number": 2,
+        "name": "Прибытие в Токио",
+        "pages": [
+          {"number": 1, "image": "https://img3.mixlib.me//manga/chainsaw-man/chapters/178/01_3vnZ.jpg"},
+          {"number": 2, "image": "https://img3.mixlib.me//manga/chainsaw-man/chapters/178/02_F0tI.jpg"},
+          {"number": 3, "image": "https://img3.mixlib.me//manga/chainsaw-man/chapters/178/03_GEz7.jpg"}
+        ]
+      },
+      {
+        "number": 3,
+        "name": "Убийца демонов",
+        "pages": [
+          {"number": 1, "image": "https://img3.mixlib.me//manga/chainsaw-man/chapters/179/01_JJZb.jpg"},
+          {"number": 2, "image": "https://img3.mixlib.me//manga/chainsaw-man/chapters/179/02_owvX.jpg"},
+          {"number": 3, "image": "https://img3.mixlib.me//manga/chainsaw-man/chapters/179/03_eD5B.jpg"}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ван Пис",
+    "cover_image": "https://cover.imglib.info/uploads/cover/one-piece/cover/8f6ebbfc-5a26-4fd5-a9f0-354869b71e92.jpg",
+    "year": 1997,
+    "authors": ["Эйитиро Ода"],
+    "description": "Монки Д. Луффи и его команда пиратов отправляются на поиски величайшего сокровища Ван Пис, чтобы стать Королём Пиратов.",
+    "chapters": [
+      {
+        "number": 1,
+        "name": "Романтик!",
+        "pages": [
+          {"number": 1, "image": "https://img3.mixlib.me//manga/one-piece/chapters/1503425/001_5y81.jpg"},
+          {"number": 2, "image": "https://img3.mixlib.me//manga/one-piece/chapters/1503425/002_1Vb9.jpg"},
+          {"number": 3, "image": "https://img3.mixlib.me//manga/one-piece/chapters/1503425/003_jy0Q.jpg"}
+        ]
+      },
+      {
+        "number": 2,
+        "name": "Пират Бакки",
+        "pages": [
+          {"number": 1, "image": "https://img3.mixlib.me//manga/one-piece/chapters/1503426/001_8PC2.jpg"},
+          {"number": 2, "image": "https://img3.mixlib.me//manga/one-piece/chapters/1503426/002_Hh8r.jpg"},
+          {"number": 3, "image": "https://img3.mixlib.me//manga/one-piece/chapters/1503426/003_qUKX.jpg"}
+        ]
+      },
+      {
+        "number": 3,
+        "name": "Зоро-пират",
+        "pages": [
+          {"number": 1, "image": "https://img3.mixlib.me//manga/one-piece/chapters/1503427/001_Ys6T.jpg"},
+          {"number": 2, "image": "https://img3.mixlib.me//manga/one-piece/chapters/1503427/002_hJm5.jpg"},
+          {"number": 3, "image": "https://img3.mixlib.me//manga/one-piece/chapters/1503427/003_p8tQ.jpg"}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Наруто",
+    "cover_image": "https://cover.imglib.info/uploads/cover/naruto/cover/f2dc9dc8-d1e8-406b-86a2-e6af64c7cd0f.jpg",
+    "year": 1999,
+    "authors": ["Масаси Кисимото"],
+    "description": "Наруто Узумаки, ниндя-изгой с демоном-лисом внутри, стремится стать Хокагэ и заслужить признание деревни.",
+    "chapters": [
+      {
+        "number": 1,
+        "name": "Узумаки Наруто!",
+        "pages": [
+          {"number": 1, "image": "https://img3.mixlib.me//manga/naruto/chapters/1503428/001_9Q0y.jpg"},
+          {"number": 2, "image": "https://img3.mixlib.me//manga/naruto/chapters/1503428/002_Ve5H.jpg"},
+          {"number": 3, "image": "https://img3.mixlib.me//manga/naruto/chapters/1503428/003_5Khg.jpg"}
+        ]
+      },
+      {
+        "number": 2,
+        "name": "Конохамару!!",
+        "pages": [
+          {"number": 1, "image": "https://img3.mixlib.me//manga/naruto/chapters/1503429/001_qNvK.jpg"},
+          {"number": 2, "image": "https://img3.mixlib.me//manga/naruto/chapters/1503429/002_v7Je.jpg"},
+          {"number": 3, "image": "https://img3.mixlib.me//manga/naruto/chapters/1503429/003_Xz9f.jpg"}
+        ]
+      },
+      {
+        "number": 3,
+        "name": "Саскэ Учиха",
+        "pages": [
+          {"number": 1, "image": "https://img3.mixlib.me//manga/naruto/chapters/1503430/001_Pt4r.jpg"},
+          {"number": 2, "image": "https://img3.mixlib.me//manga/naruto/chapters/1503430/002_k8sJ.jpg"},
+          {"number": 3, "image": "https://img3.mixlib.me//manga/naruto/chapters/1503430/003_s7Mh.jpg"}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Атака Титанов",
+    "cover_image": "https://cover.imglib.info/uploads/cover/shingeki-no-kyojin/cover/361c5573-796e-48cc-8b6b-a15a420b06c9.jpg",
+    "year": 2009,
+    "authors": ["Хадзимэ Исаяма"],
+    "description": "Человечество живёт в городах, окружённых гигантскими стенами, защищающими от титанов. Эрен Йегер клянётся уничтожить всех титанов.",
+    "chapters": [
+      {
+        "number": 1,
+        "name": "Прощай, стены",
+        "pages": [
+          {"number": 1, "image": "https://img3.mixlib.me//manga/shingeki-no-kyojin/chapters/1503431/001_2Hjv.jpg"},
+          {"number": 2, "image": "https://img3.mixlib.me//manga/shingeki-no-kyojin/chapters/1503431/002_kG8R.jpg"},
+          {"number": 3, "image": "https://img3.mixlib.me//manga/shingeki-no-kyojin/chapters/1503431/003_4PjL.jpg"}
+        ]
+      },
+      {
+        "number": 2,
+        "name": "В тот день",
+        "pages": [
+          {"number": 1, "image": "https://img3.mixlib.me//manga/shingeki-no-kyojin/chapters/1503432/001_y8Pc.jpg"},
+          {"number": 2, "image": "https://img3.mixlib.me//manga/shingeki-no-kyojin/chapters/1503432/002_j5hN.jpg"},
+          {"number": 3, "image": "https://img3.mixlib.me//manga/shingeki-no-kyojin/chapters/1503432/003_q1Kv.jpg"}
+        ]
+      },
+      {
+        "number": 3,
+        "name": "Вечер заката",
+        "pages": [
+          {"number": 1, "image": "https://img3.mixlib.me//manga/shingeki-no-kyojin/chapters/1503433/001_9r8Y.jpg"},
+          {"number": 2, "image": "https://img3.mixlib.me//manga/shingeki-no-kyojin/chapters/1503433/002_v2Lk.jpg"},
+          {"number": 3, "image": "https://img3.mixlib.me//manga/shingeki-no-kyojin/chapters/1503433/003_5BxP.jpg"}
+        ]
+      }
+    ]
+  }
+]
