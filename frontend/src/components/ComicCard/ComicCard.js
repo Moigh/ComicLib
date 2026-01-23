@@ -1,10 +1,19 @@
 import styles from './ComicCard.module.css'; 
+import { useNavigate } from 'react-router-dom'; 
 
 function ComicCard({ comic }) {
+  const navigate = useNavigate();
+  
+  const handleClick = () => {
+    navigate(`/comic/${comic.id}`);
+  };
+
   return (
     <div 
     key = {comic.id} 
 		className = "col-6 col-sm-4 col-md-3 col-lg-2"
+		onClick={handleClick}
+      	style={{ cursor: 'pointer' }} 
 		>
 			<div className = "card h-100 border-0">
 				<div className = {`${styles.body}`}>
