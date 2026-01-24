@@ -5,7 +5,7 @@ import logo_small from './CH.svg';
 
 function Navbar() {
   return (
-    <nav className={`navbar ${styles.bar}`} >
+    <nav className={`navbar ${styles.bar}`} id="main-navbar">
       
       <div className="container-fluid">
         

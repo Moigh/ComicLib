@@ -1,54 +1,54 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 
 function ComicPage() {
-  const { id } = useParams();
-  const [comic, setComic] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [navbarHeight, setNavbarHeight] = useState(56); // Примерная высота
+  const { id } = useParams(); 
 
+  const [comic, setComic] = useState(null); 
+  const [chapters, setChapters] = useState([]); 
+  const [navbarHeight, setNavbarHeight] = useState(0); 
+
+  useEffect(() => { fetchComic(); }, [id]);
+
+  useEffect(() => { 
+    if (comic) { fetchChapters(); } }, [comic]); 
+    
   useEffect(() => {
-    fetchComic();
-    // Получаем реальную высоту навбара
-    const navbar = document.querySelector('nav');
+
+    measureNavbar();
+  }, []);
+
+  const fetchComic = async () => {
+    const response = await fetch(`http://localhost:5000/api/comics/${id}`);
+    const data = await response.json();
+    setComic(data);
+  };
+
+  
+  const measureNavbar = () => {
+    const navbar = document.getElementById('main-navbar');
     if (navbar) {
       setNavbarHeight(navbar.offsetHeight);
     }
-  }, [id]);
+  };
 
-  const fetchComic = async () => {
-    try {
-      setLoading(true);
-      const response = await fetch(`http://localhost:5000/api/comics/${id}`);
-      
-      if (!response.ok) {
-        throw new Error('Комикс не найден');
-      }
-      
-      const data = await response.json();
-      setComic(data);
-      setError(null);
-    } catch (err) {
-      console.error('Ошибка:', err);
-      setError(err.message);
-    } finally {
-      setLoading(false);
-    }
-  }
-  
-  if (!comic && !error) {
+  const fetchChapters = async () => {
+    const response = await fetch(`http://localhost:5000/api/comics/${id}/chapters`);
+    const data = await response.json();
+    setChapters(data);
+  };
+
+  if (!comic) {
     return null;
   }
 
   return (
     <div className="container-fluid p-0" style={{ 
-      height: `calc(100vh - ${navbarHeight}px)`, // ← ВЫЧИТАЕМ НАВБАР
+      height: `calc(100vh - ${navbarHeight}px)`,
       overflow: 'hidden',
       display: 'flex'
     }}>
       
-      {/* ОБЕРТКА ДЛЯ ЛЕВОЙ ЧАСТИ */}
       <div style={{ 
         overflow: 'hidden',
         flexShrink: 0
@@ -56,7 +56,7 @@ function ComicPage() {
         <div className="d-none d-md-flex align-items-center justify-content-center bg-dark"
              style={{
                width: 'auto',
-               height: `calc(100vh - ${navbarHeight}px)`, // ← ТА ЖЕ ВЫСОТА
+               height: `calc(100vh - ${navbarHeight}px)`, 
                padding: '1rem'
              }}>
           <img 
@@ -71,10 +71,8 @@ function ComicPage() {
         </div>
       </div>
       
-      {/* ПРАВАЯ КОЛОНКА */}
       <div className="flex-grow-1 overflow-auto">
         <div className="p-4 p-lg-5">
-          {/* Картинка для мобильных */}
           <div className="d-md-none mb-4 text-center">
             <img 
               src={comic.cover_image} 
@@ -84,7 +82,6 @@ function ComicPage() {
             />
           </div>
           
-          {/* Остальной контент */}
           <Link to="/" className="btn btn-outline-secondary mb-4">
             ← Назад к комиксам
           </Link>
@@ -108,11 +105,11 @@ function ComicPage() {
           </div>
           
           <div className="mb-5">
-            <h4>Главы ({comic.chapters?.length || 0})</h4>
+            <h4>Главы ({chapters?.length || 0})</h4>
             
-            {comic.chapters && comic.chapters.length > 0 ? (
+            {chapters && chapters.length > 0 ? (
               <div className="list-group mt-3">
-                {comic.chapters.map(chapter => (
+                {chapters.map(chapter => (
                   <Link 
                     key={chapter.id}
                     to={`/reader/${chapter.id}`}
