@@ -14,8 +14,12 @@ function ComicPage() {
     if (comic) { fetchChapters(); } }, [comic]); 
     
   useEffect(() => {
-
     measureNavbar();
+
+    window.addEventListener('resize', measureNavbar);    
+    return () => {
+      window.removeEventListener('resize', measureNavbar);
+    };
   }, []);
 
   const fetchComic = async () => {
@@ -43,33 +47,26 @@ function ComicPage() {
   }
 
   return (
-    <div className="container-fluid p-0" style={{ 
+    <div className="container-fluid p-0" 
+    style={{ 
       height: `calc(100vh - ${navbarHeight}px)`,
-      overflow: 'hidden',
-      display: 'flex'
+      display: 'flex',
+      overflow: 'hidden'
     }}>
       
-      <div style={{ 
-        overflow: 'hidden',
-        flexShrink: 0
-      }}>
         <div className="d-none d-md-flex align-items-center justify-content-center bg-dark"
-             style={{
-               width: 'auto',
-               height: `calc(100vh - ${navbarHeight}px)`, 
-               padding: '1rem'
-             }}>
+        style={{
+          width: 'auto',
+          padding: 0,
+          maxWidth: '50%',
+          flexShrink: 0
+        }}>
           <img 
             src={comic.cover_image} 
             alt={comic.name}
-            style={{
-              maxHeight: '100%',
-              maxWidth: '100%',
-              objectFit: 'contain'
-            }}
+              className="img-fluid rounded"
           />
         </div>
-      </div>
       
       <div className="flex-grow-1 overflow-auto">
         <div className="p-4 p-lg-5">
@@ -96,7 +93,7 @@ function ComicPage() {
                 </span>
               ))}
             </div>
-            <div className="text-muted">📅 {comic.year}</div>
+            <div className="text-muted"> {comic.year}</div>
           </div>
           
           <div className="mb-5">
@@ -114,19 +111,23 @@ function ComicPage() {
                     key={chapter.id}
                     to={`/reader/${chapter.id}`}
                     className="list-group-item list-group-item-action d-flex justify-content-between"
+                    style={{
+                      minHeight: '3rem', 
+                      overflow: 'hidden'
+                    }}
                   >
-                    <div>
+                    <div className="text-truncate flex-grow-1">
                       <strong>Глава {chapter.chapter_number}</strong>
                       {chapter.name && ` - ${chapter.name}`}
                     </div>
-                    <span className="text-muted">
+                    <span className="text-muted flex-shrink-0 ms-2">
                       {chapter.pages_count || 0} стр.
                     </span>
                   </Link>
                 ))}
               </div>
             ) : (
-              <p className="text-muted">Главы пока не добавлены</p>
+              <p className="text-muted">Главы не добавлены</p>
             )}
           </div>
         </div>
