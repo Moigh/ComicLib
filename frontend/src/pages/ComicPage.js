@@ -79,10 +79,6 @@ function ComicPage() {
             />
           </div>
           
-          <Link to="/" className="btn btn-outline-secondary mb-4">
-            ← Назад к комиксам
-          </Link>
-          
           <h1 className="mb-3">{comic.name}</h1>
           
           <div className="mb-4">
