@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import ComicContent from '../components/ComicContent';
+import ComicPoster from '../components/ComicPoster';
 
 function ComicPage() {
   const { id } = useParams(); 
@@ -55,20 +56,8 @@ function ComicPage() {
       overflow: 'hidden'
     }}>
       
-        <div className="d-none d-md-flex align-items-center justify-content-center bg-dark"
-        style={{
-          width: 'auto',
-          padding: 0,
-          maxWidth: '50%',
-          flexShrink: 0
-        }}>
-          <img 
-            src={comic.cover_image} 
-            alt={comic.name}
-              className="img-fluid rounded"
-          />
-        </div>
-      
+      <ComicPoster comic={comic} />
+        
       <div className="flex-grow-1 overflow-auto">
         <div className="p-4 p-lg-5">
           <div className="d-md-none mb-4 text-center">
@@ -79,20 +68,7 @@ function ComicPage() {
               style={{ maxHeight: '70vh', width: 'auto' }}
             />
           </div>
-          
-          <h1 className="mb-3">{comic.name}</h1>
-          
-          <div className="mb-4">
-            <div className="d-flex flex-wrap gap-2 mb-2">
-              {comic.authors?.map((author, idx) => (
-                <span key={idx} className="badge bg-primary">
-                  {author.name}
-                </span>
-              ))}
-            </div>
-            <div className="text-muted"> {comic.year}</div>
-          </div>
-          
+                    
           <ComicContent comic={comic} chapters={chapters} />
         </div>
       </div>
