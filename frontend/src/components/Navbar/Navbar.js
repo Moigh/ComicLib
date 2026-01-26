@@ -2,14 +2,21 @@ import React from 'react';
 import styles from './Navbar.module.css';
 import logo from './ComicHub.svg';
 import logo_small from './CH.svg';
+import { useNavigate } from 'react-router-dom'; 
 
 function Navbar() {
+  const navigate = useNavigate();
+  
+  const handleClick = () => {
+    navigate(`/`);
+  };
   return (
     <nav className={`navbar ${styles.bar}`} id="main-navbar">
       
       <div className="container-fluid">
         
-        <div className={`${styles.logo}`} >
+        <div className={`${styles.logo}`} 
+		        onClick={handleClick}>
 					<img src={logo} alt="ComicHub" className="d-none d-sm-inline ms-2" style={{ height: '29px' }} />
 					<img src={logo_small} alt="CH" className="d-inline d-sm-none" style={{ height: '20px' }} />
         </div>
