@@ -2,10 +2,10 @@
 function ComicPoster({comic}) {
   return (
   <>
-  <div className="d-none d-md-flex align-items-center justify-content-center bg-dark"
+  <div className="d-none d-md-flex align-items-center justify-content-center"
   style={{
     width: 'auto',
-    padding: 0,
+    padding: '1rem',
     maxWidth: '50%',
     flexShrink: 0
   }}>
