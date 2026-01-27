@@ -1,19 +1,19 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/HomePage';
-import About from './pages/AboutPage';
 import Comic from './pages/ComicPage';
 import Reader from './pages/ReaderPage';
-import Navbar from './components/Navbar';
+import WithNavbar from './pages/WithNavbar';
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/comic/:id" element={<Comic />} />
+        <Route element = {<WithNavbar/>}>
+          <Route path="/" element={<Home />} />
+          <Route path="/comic/:id" element={<Comic />} />
+        </ Route >
+        <Route path="/reader/:comicId" element={<Reader />} />
       </Routes>
     </BrowserRouter>
   );
