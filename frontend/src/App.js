@@ -13,7 +13,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/comic/:id" element={<Comic />} />
         </ Route >
-        <Route path="/reader/:comicId" element={<Reader />} />
+        <Route path="/reader/:chapterId" element={<Reader />} />
       </Routes>
     </BrowserRouter>
   );
