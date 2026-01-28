@@ -18,18 +18,29 @@ with app.app_context():
     db.create_all()
 
 # Регистрируем маршруты
-app.add_url_rule('/api/comics', 'get_comics', routes.get_comics, methods=['GET'])
-app.add_url_rule('/api/comics/<int:comic_id>', 'get_comic', routes.get_comic, methods=['GET'])
+@app.route('/api/comics', methods=['GET'])
+def get_comics():
+    return routes.get_comics()
 
-app.add_url_rule('/api/comics/<int:comic_id>/chapters', 'get_comic_chapters', 
-                 routes.get_comic_chapters, methods=['GET'])
-app.add_url_rule('/api/chapters/<int:chapter_id>', 'get_chapter', 
-                 routes.get_chapter, methods=['GET'])
+@app.route('/api/comics/<int:comic_id>', methods=['GET'])
+def get_comic(comic_id):
+    return routes.get_comic(comic_id)
 
-app.add_url_rule('/api/chapters/<int:chapter_id>/pages', 'get_chapter_pages', 
-                 routes.get_chapter_pages, methods=['GET'])
-app.add_url_rule('/api/pages/<int:page_id>', 'get_page', 
-                 routes.get_page, methods=['GET'])
+@app.route('/api/comics/<int:comic_id>/chapters', methods=['GET'])
+def get_comic_chapters(comic_id):
+    return routes.get_comic_chapters(comic_id)
+
+@app.route('/api/chapters/<int:chapter_id>', methods=['GET'])
+def get_chapter(chapter_id):
+    return routes.get_chapter(chapter_id)
+
+@app.route('/api/chapters/<int:chapter_id>/pages', methods=['GET'])
+def get_chapter_pages(chapter_id):
+    return routes.get_chapter_pages(chapter_id)
+
+@app.route('/api/pages/<int:page_id>', methods=['GET'])
+def get_page(page_id):
+    return routes.get_page(page_id)
 
 # Тестовые маршруты
 @app.route('/')
