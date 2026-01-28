@@ -1,6 +1,7 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, useNavigate} from 'react-router-dom';
 import ChapSelect from '../components/ChapSelect';
+import ReaderNavbar from '../components/ReaderNavbar';
 
 function ReaderPage() {
   const { chapterId } = useParams();
@@ -92,55 +93,16 @@ function ReaderPage() {
         }
       }
     }}>
-      {/* Навбар */}
-      <nav 
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          backgroundColor: 'rgb(8, 11, 24)',
-          color: 'white',
-          padding: '0.5rem 1rem',
-          zIndex: 100,
-          display: 'flex',
-          alignItems: 'center',
-          gap: '1rem'
-        }}
-      >
-        <div style={{ flex: 1 }}>
-          <button 
-            onClick={() => navigate(`/comic/${comic.id}`)}
-            className="btn btn-link text-white text-decoration-none text-truncate d-none d-md-block"
-            style={{ maxWidth: '200px' }}
-          >
-            {comic.name}
-          </button>
-          
-          <button 
-            onClick={() => navigate(`/comic/${comic.id}`)}
-            className="btn btn-outline-light btn-sm d-md-none"
-          >
-            ←
-          </button>
-        </div>
-        
-        <div className="position-relative flex-grow-1" style={{ minWidth: 0 }}>
-          <button 
-            onClick={(e) => {
-              setIsDropdownOpen(true);
-            }}
-            className="btn btn-outline-light text-truncate w-100 p-2"
-          >
-            Глава {currentChapter.chapter_number}
-            {currentChapter.name && `: ${currentChapter.name}`}
-          </button>
-        </div>
-        
-        <div className="text-white-50 text-nowrap fs-6" style={{ flex: 1, textAlign: 'right' }}>
-          {currentPage ? `${currentPageIndex + 1} / ${currentChapter.pages?.length || 0}` : 'Загрузка...'}
-        </div>
-      </nav>
+      <ReaderNavbar 
+        onOpenChapSelect={() => setIsDropdownOpen(true)}
+        onNavigate={() => navigate(`/comic/${comic.id}`)}
+        comicName={comic.name}
+        currentChapterNumber={currentChapter.chapter_number}
+        currentChapterName={currentChapter.name}
+        currentPageIndex = {currentPageIndex}
+        currentPage = {currentPage}
+        currentChapterPagesLength = {currentChapter.pages?.length || 0}
+      />
       
       <div 
         className="d-flex align-items-center justify-content-center bg-dark"
@@ -159,13 +121,12 @@ function ReaderPage() {
               objectFit: 'contain'
             }}
           />
-        ) : (
-          <div className="text-white">Загрузка страницы...</div>
-        )}
+        ) 
+        : (null)
+        }
       </div>
       
       {isDropdownOpen && (<ChapSelect
-        isOpen={isDropdownOpen}
         onClose={() => setIsDropdownOpen(false)}
         chapters={chapters}
         currentChapterId={currentChapter?.id}

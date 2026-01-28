@@ -1,5 +1,4 @@
 function ChapSelect({ 
-  isOpen,           // boolean - открыт ли dropdown
   onClose,          // функция - закрыть dropdown
   chapters,         // массив - все главы
   currentChapterId, // number/id - текущая выбранная глава
