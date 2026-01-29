@@ -11,8 +11,7 @@ from flask import send_from_directory
 frontend_build =(Path(__file__).parent.parent.parent / 'frontend' / 'build').resolve()
 
 app = Flask(__name__, static_folder=frontend_build)
-CORS(app, origins=['http://localhost:8080'])
-
+CORS(app)
 
 # КОНФИГУРАЦИЯ БАЗЫ ДАННЫХ
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///comicbooks.db'
