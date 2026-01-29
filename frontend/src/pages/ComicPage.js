@@ -1,14 +1,22 @@
 import { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import ComicContent from '../components/ComicContent';
 import ComicPoster from '../components/ComicPoster';
 
 function ComicPage() {
   const { id } = useParams(); 
+  const navigate = useNavigate();
 
   const [comic, setComic] = useState(null); 
   const [chapters, setChapters] = useState([]); 
   const [navbarHeight, setNavbarHeight] = useState(0); 
+
+  const checkNotFound=(Res)=>{
+    if (Res.status === 404) {
+      navigate('/404', { replace: true });
+      return;
+    }
+  };
 
   useEffect(() => { fetchComic(); }, [id]);
 
@@ -26,6 +34,7 @@ function ComicPage() {
 
   const fetchComic = async () => {
     const response = await fetch(`http://localhost:5000/api/comics/${id}`);
+    checkNotFound(response);
     const data = await response.json();
     setComic(data);
   };
@@ -44,9 +53,9 @@ function ComicPage() {
     setChapters(data);
   };
 
-  if (!comic) {
-    return null;
-  }
+  if(!comic){
+    return;
+  };
 
   return (
     <div className="container-fluid p-0" 

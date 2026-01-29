@@ -13,6 +13,13 @@ function ReaderPage() {
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   
+  const checkNotFound=(Res)=>{
+    if (Res.status === 404) {
+      navigate('/404', { replace: true });
+      return;
+    }
+  };
+
   useEffect(() => {
     fetchChapterData();
   }, [chapterId]);
@@ -21,6 +28,7 @@ function ReaderPage() {
     const previousChapterNumber = currentChapter?.chapter_number || 0;
 
     const chapterRes = await fetch(`http://localhost:5000/api/chapters/${chapterId}`);
+    checkNotFound(chapterRes);
     const chapterData = await chapterRes.json();
     setCurrentChapter(chapterData);
     
