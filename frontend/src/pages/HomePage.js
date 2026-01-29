@@ -9,7 +9,7 @@ function HomePage() {
     setLoading(true);
     
     // Запрос к API
-    fetch('http://backend/api/comics')
+    fetch('http://backend:5000/api/comics')
       .then(response => response.json())
       .then(data => {
         setComics(data);

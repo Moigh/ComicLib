@@ -11,7 +11,7 @@ from flask import send_from_directory
 frontend_build =(Path(__file__).parent.parent.parent / 'frontend' / 'build').resolve()
 
 app = Flask(__name__, static_folder=frontend_build)
-CORS(app, origins=['http://localhost:3000'])
+# CORS(app, origins=['http://localhost:3000'])
 
 
 # КОНФИГУРАЦИЯ БАЗЫ ДАННЫХ
@@ -51,15 +51,15 @@ def get_page(page_id):
     return routes.get_page(page_id)
 
 # Product
-@app.route('/static/<path:filename>')
-def find_static(filename):
-    return send_from_directory(os.path.join(app.static_folder, 'static'), filename)
+# @app.route('/static/<path:filename>')
+# def find_static(filename):
+#     return send_from_directory(os.path.join(app.static_folder, 'static'), filename)
 
-@app.route('/favicon.png')
-def favicon():
-    return send_from_directory(app.static_folder, 'favicon.png')
+# @app.route('/favicon.png')
+# def favicon():
+#     return send_from_directory(app.static_folder, 'favicon.png')
 
-@app.route('/')
-@app.route('/<path:path>')
-def serve_react(path=None):
-    return send_from_directory(app.static_folder, 'index.html')
+# @app.route('/')
+# @app.route('/<path:path>')
+# def serve_react(path=None):
+#     return send_from_directory(app.static_folder, 'index.html')

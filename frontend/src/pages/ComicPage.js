@@ -33,7 +33,7 @@ function ComicPage() {
   }, []);
 
   const fetchComic = async () => {
-    const response = await fetch(`http://backend/api/comics/${id}`);
+    const response = await fetch(`http://backend:5000/api/comics/${id}`);
     checkNotFound(response);
     const data = await response.json();
     setComic(data);
@@ -48,7 +48,7 @@ function ComicPage() {
   };
 
   const fetchChapters = async () => {
-    const response = await fetch(`http://backend/api/comics/${id}/chapters`);
+    const response = await fetch(`http://backend:5000/api/comics/${id}/chapters`);
     const data = await response.json();
     setChapters(data);
   };

@@ -42,20 +42,20 @@ function ReaderPage() {
   const fetchChapterData = async () => {    
     const previousChapterNumber = currentChapter?.chapter_number || 0;
 
-    const chapterRes = await fetch(`http://backend/api/chapters/${chapterId}`);
+    const chapterRes = await fetch(`http://backend:5000/api/chapters/${chapterId}`);
     checkNotFound(chapterRes);
     const chapterData = await chapterRes.json();
     setCurrentChapter(chapterData);
     
-    const comicRes = await fetch(`http://backend/api/comics/${chapterData.comicbook_id}`);
+    const comicRes = await fetch(`http://backend:5000/api/comics/${chapterData.comicbook_id}`);
     const comicData = await comicRes.json();
     setComic(comicData);
     
-    const chaptersRes = await fetch(`http://backend/api/comics/${chapterData.comicbook_id}/chapters`);
+    const chaptersRes = await fetch(`http://backend:5000/api/comics/${chapterData.comicbook_id}/chapters`);
     const chaptersData = await chaptersRes.json();
     setChapters(chaptersData);
     
-    const pagesRes = await fetch(`http://backend/api/chapters/${chapterId}/pages`);
+    const pagesRes = await fetch(`http://backend:5000/api/chapters/${chapterId}/pages`);
     const pagesData = await pagesRes.json();
     setCurrentChapter(prev => ({ ...prev, pages: pagesData }));
 
