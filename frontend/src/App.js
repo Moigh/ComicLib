@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/HomePage';
 import Comic from './pages/ComicPage';
 import Reader from './pages/ReaderPage';
+import NotFound from './pages/NotFoundPage';
 import WithNavbar from './pages/WithNavbar';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path="/comic/:id" element={<Comic />} />
         </ Route >
         <Route path="/reader/:chapterId" element={<Reader />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
