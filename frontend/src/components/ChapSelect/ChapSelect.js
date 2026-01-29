@@ -29,6 +29,7 @@ function ChapSelect({
 		>
 			{chapters.map(chapter => (
 				<div
+					key={chapter.id}
 					onClick={(e) => {
 						onSelectChapter(chapter);
 					}}

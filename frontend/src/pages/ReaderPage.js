@@ -21,6 +21,21 @@ function ReaderPage() {
   };
 
   useEffect(() => {
+    window.addEventListener('popstate', handleBackButton);
+    window.history.pushState(null, '', window.location.pathname);
+    return () => {
+      window.removeEventListener('popstate', handleBackButton);
+    };
+  }, [navigate]);
+   
+  const handleBackButton = (e) => {
+    e.preventDefault();
+    if (window.confirm('Выйти из читалки? Прогресс не сохранится.')) {
+      navigate(`/comic/${comic.id}`);
+    }
+  };
+
+  useEffect(() => {
     fetchChapterData();
   }, [chapterId]);
   
