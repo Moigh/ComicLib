@@ -9,7 +9,7 @@ function HomePage() {
     setLoading(true);
     
     // Запрос к API
-    fetch('http://localhost:5000/api/comics')
+    fetch('/api/comics')
       .then(response => response.json())
       .then(data => {
         setComics(data);

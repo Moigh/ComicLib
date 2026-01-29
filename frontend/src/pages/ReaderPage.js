@@ -28,10 +28,14 @@ function ReaderPage() {
     };
   }, [navigate]);
    
-  const handleBackButton = (e) => {
+  const handleBackButton = async (e) => {
     e.preventDefault();
+
+    const res = await fetch(`/api/chapters/${chapterId}`);
+    const chapter = await res.json();
+
     if (window.confirm('Выйти из читалки? Прогресс не сохранится.')) {
-      navigate(`/comic/${comic.id}`);
+      navigate(`/comic/${chapter.comicbook_id}`);
     }
   };
 
@@ -42,20 +46,20 @@ function ReaderPage() {
   const fetchChapterData = async () => {    
     const previousChapterNumber = currentChapter?.chapter_number || 0;
 
-    const chapterRes = await fetch(`http://localhost:5000/api/chapters/${chapterId}`);
+    const chapterRes = await fetch(`/api/chapters/${chapterId}`);
     checkNotFound(chapterRes);
     const chapterData = await chapterRes.json();
     setCurrentChapter(chapterData);
     
-    const comicRes = await fetch(`http://localhost:5000/api/comics/${chapterData.comicbook_id}`);
+    const comicRes = await fetch(`/api/comics/${chapterData.comicbook_id}`);
     const comicData = await comicRes.json();
     setComic(comicData);
     
-    const chaptersRes = await fetch(`http://localhost:5000/api/comics/${chapterData.comicbook_id}/chapters`);
+    const chaptersRes = await fetch(`/api/comics/${chapterData.comicbook_id}/chapters`);
     const chaptersData = await chaptersRes.json();
     setChapters(chaptersData);
     
-    const pagesRes = await fetch(`http://localhost:5000/api/chapters/${chapterId}/pages`);
+    const pagesRes = await fetch(`/api/chapters/${chapterId}/pages`);
     const pagesData = await pagesRes.json();
     setCurrentChapter(prev => ({ ...prev, pages: pagesData }));
 
