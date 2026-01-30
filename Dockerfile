@@ -1,11 +1,13 @@
 FROM python:3-slim
 
-WORKDIR /backend
+WORKDIR /app
 
-COPY requirements.txt .
+COPY backend/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . .
+COPY backend/ .
+
+COPY frontend/build ./build
 
 CMD ["python", "run.py"]
 
