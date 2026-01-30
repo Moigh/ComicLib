@@ -50,15 +50,15 @@ def get_page(page_id):
     return routes.get_page(page_id)
 
 # Product
-# @app.route('/static/<path:filename>')
-# def find_static(filename):
-#     return send_from_directory(os.path.join(app.static_folder, 'static'), filename)
+@app.route('/static/<path:filename>')
+def find_static(filename):
+    return send_from_directory(os.path.join(app.static_folder, 'static'), filename)
 
-# @app.route('/favicon.png')
-# def favicon():
-#     return send_from_directory(app.static_folder, 'favicon.png')
+@app.route('/favicon.png')
+def favicon():
+    return send_from_directory(app.static_folder, 'favicon.png')
 
-# @app.route('/')
-# @app.route('/<path:path>')
-# def serve_react(path=None):
-#     return send_from_directory(app.static_folder, 'index.html')
+@app.route('/')
+@app.route('/<path:path>')
+def serve_react(path=None):
+    return send_from_directory(app.static_folder, 'index.html')
