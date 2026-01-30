@@ -7,8 +7,8 @@ from flask_cors import CORS
 from flask import send_from_directory
 
 
-# Получаем путь к build 
-frontend_build =(Path(__file__).parent.parent.parent / 'frontend' / 'build').resolve()
+# Получаем путь к build (только для контейнера)
+frontend_build =(Path(__file__).parent.parent/ 'build').resolve()
 
 app = Flask(__name__, static_folder=frontend_build)
 CORS(app)
